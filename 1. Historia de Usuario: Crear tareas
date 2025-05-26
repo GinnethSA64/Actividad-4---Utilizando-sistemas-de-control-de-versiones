@@ -1,0 +1,14 @@
+const tareas = [];
+
+function crearTarea(nombre) {
+  const tarea = {
+    id: tareas.length + 1,
+    nombre,
+    completada: false
+  };
+  tareas.push(tarea);
+  return tarea;
+}
+
+// Ejemplo:
+console.log("Tarea creada:", crearTarea("Estudiar para el examen"));
