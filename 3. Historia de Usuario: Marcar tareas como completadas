@@ -1,0 +1,11 @@
+function completarTarea(id) {
+  const tarea = tareas.find(t => t.id === id);
+  if (tarea) {
+    tarea.completada = true;
+    return tarea;
+  }
+  return null;
+}
+
+// Ejemplo:
+console.log("Tarea completada:", completarTarea(1));
