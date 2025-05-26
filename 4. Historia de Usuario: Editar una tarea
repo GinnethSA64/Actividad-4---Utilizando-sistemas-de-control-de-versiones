@@ -1,0 +1,11 @@
+function editarTarea(id, nuevoNombre) {
+  const tarea = tareas.find(t => t.id === id);
+  if (tarea) {
+    tarea.nombre = nuevoNombre;
+    return tarea;
+  }
+  return null;
+}
+
+// Ejemplo:
+console.log("Tarea editada:", editarTarea(1, "Estudiar Git y GitHub"));
