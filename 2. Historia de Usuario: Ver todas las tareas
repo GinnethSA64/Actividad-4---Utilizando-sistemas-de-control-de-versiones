@@ -1,0 +1,6 @@
+function listarTareas() {
+  return tareas;
+}
+
+// Ejemplo:
+console.log("Todas las tareas:", listarTareas());
