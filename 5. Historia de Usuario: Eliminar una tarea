@@ -1,0 +1,11 @@
+function eliminarTarea(id) {
+  const index = tareas.findIndex(t => t.id === id);
+  if (index !== -1) {
+    const tareaEliminada = tareas.splice(index, 1);
+    return tareaEliminada[0];
+  }
+  return null;
+}
+
+// Ejemplo:
+console.log("Tarea eliminada:", eliminarTarea(1));
