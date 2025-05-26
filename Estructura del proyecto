@@ -1,0 +1,5 @@
+gestion-tareas/
+├── .gitignore
+├── README.md
+├── historias-usuario.md
+└── app.js
